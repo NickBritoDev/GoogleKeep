@@ -1,0 +1,152 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: #03001e;
+    background: linear-gradient(to bottom, #ec38bc, #7303c0, #03001e);
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+header {
+    border-bottom: 1px solid #ccc;
+    padding: 1rem 2rem;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+#addNoteContainer input::placeholder, .note textarea::placeholder, #searchInput::placeholder {
+    color: #fff;
+}
+
+#searchContainer {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: #6566699c;
+    padding: 10px;
+    border-radius: 6px;
+    border: solid 1px #fff;
+}
+
+#searchInput {
+    text-transform: uppercase;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    font-weight: bold;
+    width: 400px;
+    outline: none;
+}
+
+#exportNotes {
+    background-color: #6566699c;
+    border: 2px solid #fff;
+    border-radius: 6px;
+    color: #fff;
+    padding: 5px 15px;
+    transition: 0.4s;
+    cursor: pointer;
+    display: flex;
+    gap: 0.5rem;
+}
+
+#exportNotes:hover {
+    background-color: #5556589c;
+    scale: 0.95;
+}
+
+#addNoteContainer {
+    display: flex;
+    width: 400px;
+    margin: 1rem auto 0;
+    gap: 1rem;
+}
+
+#addNoteContainer input, #addNoteContainer button {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#addNoteContainer input {
+    flex: 1;
+    background-color: #5556589c;
+    border: 1px solid #fff;
+    color: #fff;
+    text-transform: uppercase;
+    outline: none;
+    font-weight: 400;
+}
+
+#addNoteContainer button {
+    display: flex;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    margin: auto;
+    background-color: #fff;
+    color: #000;
+}
+
+#notesContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 250px);
+    padding: 2rem;
+    gap: 2rem;
+}
+
+.note {
+    min-height: 200px;
+    padding: 1rem;
+    background-color: #6566699c;
+    border: solid 1px #fff;
+    border-radius: 12px;
+    color: #fff;
+    position: relative;
+}
+
+.note textarea {
+    background-color: transparent;
+    resize: none;
+    color: #fff;
+    border: none;
+    height: 100%;
+    outline: none;
+}
+
+
+
+.note .bi-pin {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    cursor: pointer;
+}
+
+.note .bi-x-lg, .note .bi-file-earmark-plus{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    transition: 0.3s;
+    color: #fff;
+    cursor: pointer;
+}
+
+.note .bi-x-lg:hover, .note .bi-file-earmark-plus:hover, .note .bi-pin:hover{
+   scale: 1.1;
+}
+
+.note .bi-file-earmark-plus{
+    top: 40px;
+}
+
+.fixed{
+    background-color: #434446bb;
+}
