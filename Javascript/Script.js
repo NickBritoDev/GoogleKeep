@@ -67,6 +67,8 @@ function createNote(id, content, fixed) {
     textarea.value = content;
     //cria um placeholder para a box do textarea
     textarea.placeholder = 'Adicione algum texto...';
+    //destiva a digitação dentro do textarea
+    textarea.disabled = true
 
     //traz o que esta dentro do textarea para o element 
     element.appendChild(textarea);

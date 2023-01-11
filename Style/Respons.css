@@ -1,0 +1,22 @@
+@media screen and (max-width: 775px){
+    #addNoteContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .responseNav{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        gap: 10px;
+        width: 300px;
+    }
+
+    #notesContainer {
+        margin: auto;
+        width: 100%;
+        justify-content: center;
+    }
+
+}
